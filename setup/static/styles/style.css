@@ -1,0 +1,35 @@
+@import url("header.css");
+:root {
+
+    --cor-de-fundo: #DFD9CB;
+    --cor-menu:#D9D9D9;
+    --cor-titulo:#4B3936;
+    --cor-itens:#836C64;
+    --fonte-principal: "Poppins";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.texto-index{
+    position: absolute;
+}
+
+.titulo-qp {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+/* .logo_index{
+    display: flex;
+    padding: 5%;
+    margin-left: 5%;  
+    border-radius: 10%; 
+} */
+
