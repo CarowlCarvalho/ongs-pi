@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Animal🐶🐱</title>
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+
+    <style>
+      form {
+      margin: 0 25% 25% 25%;
+      padding: 5%;
+      border: 5px solid #AC9795;
+      border-radius: 10%;
+      font-size: 20px;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #4B3936;
+      box-sizing: border-box;
+      font-size: 15px;
+      }
+      button {
+      background-color: #4B3936;
+      color: #DFD9CB;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      font-size: 20px;
+      font-weight: bold;
+      }
+      h1 {
+      text-align:center;
+      font-size:20px;
+      font-weight: bold;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabeçalho_menu-h"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">
+                    <a href="http://127.0.0.1:8000" class="lista-menu__titulo">HOME</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="http://127.0.0.1:8000/login/" class="lista-menu_link">LOGIN</a>
+                </li>
+                <li class="lista-menu__item">
+                  <a href="http://127.0.0.1:8000/participa/" class="lista-menu_link">QUEM PARTICIPA</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="http://127.0.0.1:8000/cadastro/" class="lista-menu_link">COMO AJUDAR</a>
+                </li>
+                <li class="lista-menu__titulo">
+                    <a href="http://127.0.0.1:8000/artigos" class="lista-menu__titulo">ARTIGOS</a>
+                </li>
+
+  
+            </ul>
+        </div>
+        
+        <div class="container">
+           <a href="http://127.0.0.1:8000/login/" class="img-banner"><img src="{% static 'assets/user.png' %}" alt="acesso" ></a>
+        </div>
+        
+       
+    </header>
+
+    <!-- <section class="banner">
+        <img class="logo_index" src="{% static 'assets/c1.png' %}" width=" 100%">
+    </section> -->
+
+    <div class="form-perfil">
+        <form>
+            <h1>GERENCIAR PERFIL</h1>
+            <div class="formcontainer">
+            <hr/>
+            <div class="container">
+              <label for="uname"><strong>Alterar e-mail</strong></label>
+              <input type="text" placeholder="Digite seu e-mail" name="uname" required>
+              <label for="psw"><strong>Alterar senha</strong></label>
+              <input type="password" placeholder="Digite sua senha" name="psw" required>
+              <label for="tel"><strong>Alterar telefone</strong></label>
+              <input type="text" placeholder="(xx) xxxxx - xxxx" name="tel" required>
+              <label for="end"><strong>Alterar endereço</strong></label>
+              <input type="text" placeholder="Rua, número, bairro, cidade, CEP" name="end" required>
+        
+            </div>
+            <button type="submit">Salvar</button>
+            <div class="container" style="background-color: #DFD9CB ">
+            </div>
+          </form>
+      
+    </div>
+
+    <div class="postagem-perfil">
+        <a href="http://127.0.0.1:8000/login/" class="img-banner"><img src="{% static 'assets/post.png' %}" alt="acesso" ></a>
+     </div>
+
+     <button type="submit">Enviar</button>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Animal🐶🐱</title>
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+</head>
+
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabeçalho_menu-h"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">
+                    <a href="http://127.0.0.1:8000" class="lista-menu__titulo">HOME</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="http://127.0.0.1:8000/login/" class="lista-menu_link">LOGIN</a>
+                </li>
+                <li class="lista-menu__item">
+                  <a href="http://127.0.0.1:8000/participa/" class="lista-menu_link">QUEM PARTICIPA</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="http://127.0.0.1:8000/cadastro/" class="lista-menu_link">COMO AJUDAR</a>
+                </li>
+                <li class="lista-menu__titulo">
+                    <a href="http://127.0.0.1:8000/artigos" class="lista-menu__titulo">ARTIGOS</a>
+                </li>
+
+  
+            </ul>
+        </div>
+        
+        <div class="container">
+           <a href="http://127.0.0.1:8000/login/" class="img-banner"><img src="{% static 'assets/user.png' %}" alt="acesso" ></a>
+        </div>
+        
+        
+       
+    </header>
+    <div class="titulo-qp">
+        <h1>Quem participa fazendo o bem</h1>
+    </div>
+    
+
+    <!-- <section class="banner">
+        <img class="logo_index" src="{% static 'assets/c1.png' %}" width=" 100%">
+    </section> -->
+
+    <section class="texto">
+        <img class="texto_index" src="{% static 'assets/pq.png' %}" width=" 100%" >
+
+        <img class="texto_index" src="{% static 'assets/qp1.png' %}" width=" 100%" >
+
+
+
+
+    </section>
+
+
+
+</body>
+
+</html>
